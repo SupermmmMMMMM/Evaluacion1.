@@ -1,17 +1,46 @@
-<app-header></app-header>
+
 
 <ion-content>
-
- <div class="test">
-   inicio-sesion works!
+<app-header></app-header>
 
 
 
-   <a [routerLink]="['/inicio-sesion']">Ir a dou2</a>
+<div class="cuerpo">
+  <div class="menu-container">
+    <details>
+      <summary>Matemáticas</summary>
+      <p><strong>Descripción:</strong> La Matemática es una ciencia que estudia los números, las formas y los patrones.</p>
+      <p><strong>Horario:</strong> Lunes y Miércoles, 8:00 - 10:00</p>
+    </details>
 
+    <details>
+      <summary>Física</summary>
+      <p><strong>Descripción:</strong> La Física es la ciencia que estudia las propiedades de la materia y la energía.</p>
+      <p><strong>Horario:</strong> Martes y Jueves, 10:00 - 12:00</p>
+    </details>
 
- </div>
+    <details>
+      <summary>Química</summary>
+      <p><strong>Descripción:</strong> La Química estudia la composición, estructura y propiedades de la materia.</p>
+      <p><strong>Horario:</strong> Viernes, 8:00 - 10:00</p>
+    </details>
+
+    <details>
+      <summary>Biología</summary>
+      <p><strong>Descripción:</strong> La Biología es la ciencia que estudia a los seres vivos y su relación con el entorno.</p>
+      <p><strong>Horario:</strong> Miércoles y Viernes, 10:00 - 12:00</p>
+    </details>
+
+    <details>
+      <summary>Historia</summary>
+      <p><strong>Descripción:</strong> La Historia es el estudio del pasado, especialmente de los seres humanos.</p>
+      <p><strong>Horario:</strong> Lunes y Jueves, 14:00 - 16:00</p>
+    </details>
+  </div>
+</div>
+
+<a class=dou [routerLink]="['/inicio-sesion']">Ir a dou2</a>
+
  </ion-content>
 
  <app-footer></app-footer>
-

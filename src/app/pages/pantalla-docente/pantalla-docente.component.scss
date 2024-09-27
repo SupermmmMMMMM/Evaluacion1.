@@ -1,0 +1,68 @@
+/* Estilos básicos para el cuerpo */
+.cuerpo {
+  font-family: Arial, sans-serif;
+  background-image: url('/assets/img/duoc-uc-logo-F1437952BE-seeklogo.com.png');
+  background-size: 100% 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  height: 100%; /* Ocupa toda la altura */
+  margin: 0; /* Eliminar márgenes predeterminados */
+  overflow: auto; /* Permitir scroll */
+
+
+
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  padding-top: 20px;
+  margin: 0;
+}
+.dou{background-color: none
+
+}
+
+.menu-container {
+  width: 300px;
+background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+align-self: center;}
+
+
+/* Estilos para cada asignatura */
+details {
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  padding: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Cambia el color cuando el usuario pasa el mouse */
+summary:hover {
+  background-color: #45a049;
+}
+
+/* Estilos de la descripción que se despliega */
+details[open] {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+p {
+  margin: 5px 0;
+  color: #333;
+}
