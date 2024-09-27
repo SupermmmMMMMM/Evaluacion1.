@@ -1,5 +1,6 @@
 /* Estilos básicos para el cuerpo */
 .cuerpo {
+
   font-family: Arial, sans-serif;
   background-image: url('/assets/img/duoc-uc-logo-F1437952BE-seeklogo.com.png');
   background-size: 100% 100% ;
@@ -8,7 +9,7 @@
 
 
   height: 100%; /* Ocupa toda la altura */
-  margin: 0; /* Eliminar márgenes predeterminados */
+
   overflow: auto; /* Permitir scroll */
 
 
@@ -16,20 +17,21 @@
   display: flex;
   justify-content: center;
 
-  height: 100vh;
-  padding-top: 20px;
+
+
   margin: 0;
 }
-.dou{background-color: none
 
-}
+
 
 .menu-container {
-  width: 300px;
+  width: 100%;
+  max-height: 100%; /* Asegura que el contenido no exceda el contenedor */
+
 background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 10px;
+
   backdrop-filter: blur(10px);
 align-self: center;}
 
