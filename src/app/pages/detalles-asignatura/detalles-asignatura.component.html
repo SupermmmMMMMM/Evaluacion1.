@@ -23,8 +23,14 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Botón para escanear código QR -->
-  <ion-button expand="full" (click)="iniciarEscaneo()">Escanear QR</ion-button>
+  <ng-container *ngIf="tipoUsuario === 'alumno'">
+    <ion-button expand="full" color="primary" (click)="iniciarEscaneo()">
+      Escanear QR
+    </ion-button>
+  </ng-container>
+  <ng-container *ngIf="tipoUsuario === 'docente'">
+    <button (click)="generarQR()">Generar QR</button>
+  </ng-container>
 
   <!-- Scanner de QR -->
 

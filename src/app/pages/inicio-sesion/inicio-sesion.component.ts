@@ -25,7 +25,7 @@ export class InicioSesionComponent  {
     } else if (this.username === 'alumno' && this.password === '1234') {
       localStorage.setItem('nombreUsuario', this.username);
       localStorage.setItem('tipoUsuario', 'alumno');
-      this.router.navigate(['/alumno']);
+      this.router.navigate(['/pantalla-docente']);
     } else {
       this.loginError = 'Credenciales incorrectas';
     }

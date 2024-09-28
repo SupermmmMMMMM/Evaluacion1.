@@ -47,6 +47,11 @@ export class DetallesAsignaturaComponent implements OnInit {
     const asignaturaId = +this.route.snapshot.paramMap.get('id')!;
     this.asignatura = this.asignaturas.find(asignatura => asignatura.id === asignaturaId);
   }
+  generarQR() {
+    // Lógica para generar el QR
+    console.log('Generando QR para la asignatura:', this.asignatura?.nombre);
+    // Aquí podrías utilizar alguna librería para generar el QR, o cualquier otra lógica que necesites.
+  }
 
   iniciarEscaneo() {
     this.escaneando = true;
