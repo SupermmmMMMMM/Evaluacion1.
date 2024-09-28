@@ -1,19 +1,21 @@
+<app-header></app-header>
 
+<ion-content class="ion-padding">
+  <h2>Inicio de Sesión</h2>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Iniciar Sesión</ion-button>
+  </form>
+  <ion-button expand="block" fill="clear" (click)="restablecerContrasena()">Restablecer Contraseña</ion-button>
 
-
-<ion-content>
- <app-header></app-header>
-<div class="test">
-  inicio-sesion works!
-
-  asdasdasdsadas
-
-  <a [routerLink]="['/pantalla-docente']">Ir a dou</a>
-
-
-</div>
+  <ion-text color="danger" *ngIf="loginError">{{ loginError }}</ion-text>
 </ion-content>
 
 <app-footer></app-footer>
-
-
