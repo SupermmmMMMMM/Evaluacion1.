@@ -5,7 +5,10 @@ import { IonicModule } from '@ionic/angular';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { PantallaDocenteComponent } from './pantalla-docente/pantalla-docente.component';
-import { RouterModule } from '@angular/router';
+import { DetallesAquitecturaComponent } from './detalles-aquitectura/detalles-aquitectura.component';
+import { DetallesEstadisticaComponent } from './detalles-estadistica/detalles-estadistica.component';
+import { DetallesProgramacionComponent } from './detalles-programacion/detalles-programacion.component';
+
 
 
 
@@ -13,7 +16,10 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     InicioSesionComponent,
-    PantallaDocenteComponent
+    PantallaDocenteComponent,
+    DetallesAquitecturaComponent,
+    DetallesEstadisticaComponent,
+    DetallesProgramacionComponent
   ],
   imports: [
     CommonModule,

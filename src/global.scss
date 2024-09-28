@@ -38,7 +38,21 @@
 
 ion-content{
   --padding-top: 56px;
+
+
+    --background: none; /* Deshabilitar el fondo por defecto de Ionic */
+
+    /* Estilo para la imagen de fondo */
+    background-image: url('assets/img/duoc-uc-logo-F1437952BE-seeklogo.com.png'); /* Ruta a tu imagen */
+
+    background-size: 100% 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
 }
+
 ion-header {
   position: fixed;
   top: 0;
@@ -46,3 +60,5 @@ ion-header {
   right: 0;
   z-index: 1000;
 }
+
+
