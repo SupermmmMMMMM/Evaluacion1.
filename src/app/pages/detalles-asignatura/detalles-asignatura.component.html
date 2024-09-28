@@ -1,0 +1,31 @@
+<ion-header>
+  <app-header></app-header>
+  </ion-header>
+  <ion-content>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalles de {{ asignatura?.nombre }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ asignatura?.nombre }}</ion-card-title>
+      <ion-card-subtitle>{{ asignatura?.descripcion }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Fecha: {{ asignatura?.fecha }}</p>
+      <p>Hora: {{ asignatura?.hora }}</p>
+      <p>Contenido: {{ asignatura?.contenido }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón para escanear código QR -->
+  <ion-button expand="full" (click)="iniciarEscaneo()">Escanear QR</ion-button>
+
+  <!-- Scanner de QR -->
+
+</ion-content>

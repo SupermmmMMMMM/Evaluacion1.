@@ -5,9 +5,10 @@ import { IonicModule } from '@ionic/angular';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { PantallaDocenteComponent } from './pantalla-docente/pantalla-docente.component';
-import { DetallesAquitecturaComponent } from './detalles-aquitectura/detalles-aquitectura.component';
-import { DetallesEstadisticaComponent } from './detalles-estadistica/detalles-estadistica.component';
-import { DetallesProgramacionComponent } from './detalles-programacion/detalles-programacion.component';
+
+
+import { FormsModule } from '@angular/forms';
+import { DetallesAsignaturaComponent } from './detalles-asignatura/detalles-asignatura.component';
 
 
 
@@ -17,15 +18,16 @@ import { DetallesProgramacionComponent } from './detalles-programacion/detalles-
   declarations: [
     InicioSesionComponent,
     PantallaDocenteComponent,
-    DetallesAquitecturaComponent,
-    DetallesEstadisticaComponent,
-    DetallesProgramacionComponent
+
+    DetallesAsignaturaComponent
+
   ],
   imports: [
     CommonModule,
     IonicModule,
     PagesRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
 
 
   ]
