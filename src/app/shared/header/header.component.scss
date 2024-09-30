@@ -1,11 +1,23 @@
-
-
-.custom{
-  font-size: 12px
+ion-header {
+  background-color: #e1ba09;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-ion-toolbar{
-  --background: rgb(215, 215, 13);
-  --color: rgb(255, 255, 255);
 }
+
+.custom-title {
+  color: #150e73; /* Color del título */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.custom-title .highlight {
+  color: #e1ba09; /* Color destacado en el título */
+}
+

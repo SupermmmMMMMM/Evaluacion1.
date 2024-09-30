@@ -37,3 +37,21 @@
 @import "@ionic/angular/css/palettes/dark.system.css";
 
 
+ion-content{
+
+
+
+    --background: none; /* Deshabilitar el fondo por defecto de Ionic */
+
+    /* Estilo para la imagen de fondo */
+    background-image: url('assets/img/duoc-uc-logo-F1437952BE-seeklogo.com.png'); /* Ruta a tu imagen */
+    background-size: cover;
+    background-size: 100% 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+}
+
+/* global.scss */

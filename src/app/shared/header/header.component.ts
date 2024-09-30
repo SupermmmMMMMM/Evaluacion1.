@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { DatosUsuarioService } from 'src/app/servicios/datos-usuario.service';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent  implements OnInit {
-
+  datosUsuario = inject(DatosUsuarioService);
+  nombre!: string;
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.nombre = this.datosUsuario.getTipo();
+  }
 
 }
